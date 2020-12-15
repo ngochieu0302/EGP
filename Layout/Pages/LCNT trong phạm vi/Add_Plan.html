@@ -1,0 +1,2360 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required Meta Tags Always Come First -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Title -->
+    <title>Trang chủ | IDNE - Admin &amp; Dashboard Template</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./favicon.svg">
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" href="./../../../assets/vendor/icon-set/style.css">
+    <link rel="stylesheet" href="./../../../assets/vendor/select2/dist/css/select2.min.css">
+    <link rel="stylesheet" href="./../../../assets/vendor/chart.js/dist/Chart.min.css">
+    <link rel="stylesheet" href="./../../../assets/vendor/daterangepicker/daterangepicker.css">
+    <link rel="stylesheet" href="../../../../assets/vendor/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+    
+
+    <!-- CSS Fis Template -->
+    <link rel="stylesheet" href="./../../../assets/css/theme.min.css">
+  </head>
+
+  <body class="has-navbar-vertical-aside navbar-vertical-aside-show-xl   footer-offset">
+    
+      <script src="./../../../assets/vendor/hs-navbar-vertical-aside/hs-navbar-vertical-aside-mini-cache.js"></script>
+    
+
+    <!-- Search Form -->
+    <div id="searchDropdown" class="hs-unfold-content dropdown-unfold search-fullwidth d-md-none">
+      <form class="input-group input-group-merge input-group-borderless">
+        <div class="input-group-prepend">
+          <div class="input-group-text">
+            <i class="tio-search"></i>
+          </div>
+        </div>
+
+        <input class="form-control rounded-0" type="search" placeholder="Search in Fis" aria-label="Search in Fis">
+
+        <div class="input-group-append">
+          <div class="input-group-text">
+            <div class="hs-unfold">
+              <a class="js-hs-unfold-invoker" href="javascript:;"
+                 data-hs-unfold-options='{
+                   "target": "#searchDropdown",
+                   "type": "css-animation",
+                   "animationIn": "fadeIn",
+                   "hasOverlay": "rgba(46, 52, 81, 0.1)",
+                   "closeBreakpoint": "md"
+                 }'>
+                <i class="tio-clear tio-lg"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <!-- End Search Form -->
+
+    <!-- ========== HEADER ========== -->
+    
+      <header id="header" class="navbar navbar-expand-lg navbar-fixed navbar-height navbar-flush navbar-container navbar-bordered">
+        <div class="navbar-nav-wrap">
+          <div class="navbar-brand-wrapper">
+            <!-- Logo -->
+            <a class="navbar-brand" href="./index.html" aria-label="Fis">
+              <img class="navbar-brand-logo" src="./../../../assets/svg/logos/logo.svg" alt="Logo">
+              <img class="navbar-brand-logo-mini" src="./../../../assets/svg/logos/logo-short.svg" alt="Logo">
+            </a>
+            <!-- End Logo -->
+          </div>
+
+          <div class="navbar-nav-wrap-content-left">
+            <!-- Navbar Vertical Toggle -->
+            <button type="button" class="js-navbar-vertical-aside-toggle-invoker close mr-3">
+              <i class="tio-first-page navbar-vertical-aside-toggle-short-align" data-toggle="tooltip" data-placement="right" title="Collapse"></i>
+              <i class="tio-last-page navbar-vertical-aside-toggle-full-align" data-template='<div class="tooltip d-none d-sm-block" role="tooltip"><div class="arrow"></div><div class="tooltip-inner"></div></div>' data-toggle="tooltip" data-placement="right" title="Expand"></i>
+            </button>
+            <!-- End Navbar Vertical Toggle -->
+
+            <!-- Search Form -->
+            <div class="d-none d-md-block">
+              <span style="color: #064D69;">Trang chủ</span>
+              <span style="color: #064D69;margin-left: 2ex;">Hoạt động</span>
+              <span style="color: #064D69;margin-left: 2ex;">Báo cáo</span>
+            </div>
+            <!-- End Search Form -->
+          </div>
+
+          <!-- Secondary Content -->
+          <div class="navbar-nav-wrap-content-right">
+            <!-- Navbar -->
+            <ul class="navbar-nav align-items-center flex-row">
+              <li class="nav-item d-md-none">
+                <!-- Search Trigger -->
+                <div class="hs-unfold">
+                  <a class="js-hs-unfold-invoker btn btn-icon btn-ghost-secondary rounded-circle" href="javascript:;"
+                     data-hs-unfold-options='{
+                       "target": "#searchDropdown",
+                       "type": "css-animation",
+                       "animationIn": "fadeIn",
+                       "hasOverlay": "rgba(46, 52, 81, 0.1)",
+                       "closeBreakpoint": "md"
+                     }'>
+                    <i class="tio-search"></i>
+                  </a>
+                </div>
+                <!-- End Search Trigger -->
+              </li>
+
+              <li class="nav-item d-none d-sm-inline-block">
+                <!-- Notification -->
+                <div class="hs-unfold">
+                  <a class="js-hs-unfold-invoker btn btn-icon btn-ghost-secondary rounded-circle" href="javascript:;"
+                     data-hs-unfold-options='{
+                       "target": "#notificationDropdown",
+                       "type": "css-animation"
+                     }'>
+                    <i class="tio-notifications-on-outlined"></i>
+                  </a>
+
+                  <div id="notificationDropdown" class="hs-unfold-content dropdown-unfold dropdown-menu dropdown-menu-right navbar-dropdown-menu" style="width: 25rem;">
+                    <!-- Header -->
+                    <div class="card-header">
+                      <span class="card-title h4">Notifications</span>
+
+                      <!-- Unfold -->
+                      <div class="hs-unfold">
+                        <a class="js-hs-unfold-invoker btn btn-icon btn-sm btn-ghost-secondary rounded-circle" href="javascript:;"
+                           data-hs-unfold-options='{
+                             "target": "#notificationSettingsOneDropdown",
+                             "type": "css-animation"
+                           }'>
+                          <i class="tio-more-vertical"></i>
+                        </a>
+                        <div id="notificationSettingsOneDropdown" class="hs-unfold-content dropdown-unfold dropdown-menu dropdown-menu-right">
+                          <span class="dropdown-header">Settings</span>
+                          <a class="dropdown-item" href="#">
+                            <i class="tio-archive dropdown-item-icon"></i>
+                            Archive all
+                          </a>
+                          <a class="dropdown-item" href="#">
+                            <i class="tio-all-done dropdown-item-icon"></i>
+                            Mark all as read
+                          </a>
+                          <a class="dropdown-item" href="#">
+                            <i class="tio-toggle-off dropdown-item-icon"></i>
+                            Disable notifications
+                          </a>
+                          <a class="dropdown-item" href="#">
+                            <i class="tio-gift dropdown-item-icon"></i>
+                            What's new?
+                          </a>
+                          <div class="dropdown-divider"></div>
+                          <span class="dropdown-header">Feedback</span>
+                          <a class="dropdown-item" href="#">
+                            <i class="tio-chat-outlined dropdown-item-icon"></i>
+                            Report
+                          </a>
+                        </div>
+                      </div>
+                      <!-- End Unfold -->
+                    </div>
+                    <!-- End Header -->
+
+                    <!-- Nav -->
+                    <ul class="nav nav-tabs nav-justified" id="notificationTab" role="tablist">
+                      <li class="nav-item">
+                        <a class="nav-link active" id="notificationNavOne-tab" data-toggle="tab" href="#notificationNavOne" role="tab" aria-controls="notificationNavOne" aria-selected="true">Messages (3)</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="notificationNavTwo-tab" data-toggle="tab" href="#notificationNavTwo" role="tab" aria-controls="notificationNavTwo" aria-selected="false">Archived</a>
+                      </li>
+                    </ul>
+                    <!-- End Nav -->
+
+                    <!-- Body -->
+                    <div class="card-body-height">
+                      <!-- Tab Content -->
+                      <div class="tab-content" id="notificationTabContent">
+                        <div class="tab-pane fade show active" id="notificationNavOne" role="tabpanel" aria-labelledby="notificationNavOne-tab">
+                          <ul class="list-group list-group-flush navbar-card-list-group">
+                            <!-- Item -->
+                            <li class="list-group-item custom-checkbox-list-wrapper">
+                              <div class="row">
+                                <div class="col-auto position-static">
+                                  <div class="d-flex align-items-center">
+                                    <div class="custom-control custom-checkbox custom-checkbox-list">
+                                      <input type="checkbox" class="custom-control-input" id="notificationCheck1" checked>
+                                      <label class="custom-control-label" for="notificationCheck1"></label>
+                                      <span class="custom-checkbox-list-stretched-bg"></span>
+                                    </div>
+                                    <div class="avatar avatar-sm avatar-circle">
+                                      <img class="avatar-img" src="./../../../assets/img/160x160/img3.jpg" alt="Image Description">
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col ml-n3">
+                                  <span class="card-title h5">Brian Warner</span>
+                                  <p class="card-text font-size-sm">changed an issue from "In Progress" to <span class="badge badge-success">Review</span></p>
+                                </div>
+                                <small class="col-auto text-muted text-cap">2hr</small>
+                              </div>
+                              <a class="stretched-link" href="#"></a>
+                            </li>
+                            <!-- End Item -->
+
+                            <!-- Item -->
+                            <li class="list-group-item custom-checkbox-list-wrapper">
+                              <div class="row">
+                                <div class="col-auto position-static">
+                                  <div class="d-flex align-items-center">
+                                    <div class="custom-control custom-checkbox custom-checkbox-list">
+                                      <input type="checkbox" class="custom-control-input" id="notificationCheck2" checked>
+                                      <label class="custom-control-label" for="notificationCheck2"></label>
+                                      <span class="custom-checkbox-list-stretched-bg"></span>
+                                    </div>
+                                    <div class="avatar avatar-sm avatar-soft-dark avatar-circle">
+                                      <span class="avatar-initials">K</span>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col ml-n3">
+                                  <span class="card-title h5">Klara Hampton</span>
+                                  <p class="card-text font-size-sm">mentioned you in a comment</p>
+                                  <blockquote class="blockquote blockquote-sm">
+                                    Nice work, love! You really nailed it. Keep it up!
+                                  </blockquote>
+                                </div>
+                                <small class="col-auto text-muted text-cap">10hr</small>
+                              </div>
+                              <a class="stretched-link" href="#"></a>
+                            </li>
+                            <!-- End Item -->
+
+                            <!-- Item -->
+                            <li class="list-group-item custom-checkbox-list-wrapper">
+                              <div class="row">
+                                <div class="col-auto position-static">
+                                  <div class="d-flex align-items-center">
+                                    <div class="custom-control custom-checkbox custom-checkbox-list">
+                                      <input type="checkbox" class="custom-control-input" id="notificationCheck4" checked>
+                                      <label class="custom-control-label" for="notificationCheck4"></label>
+                                      <span class="custom-checkbox-list-stretched-bg"></span>
+                                    </div>
+                                    <div class="avatar avatar-sm avatar-circle">
+                                      <img class="avatar-img" src="./../../../assets/img/160x160/img10.jpg" alt="Image Description">
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col ml-n3">
+                                  <span class="card-title h5">Ruby Walter</span>
+                                  <p class="card-text font-size-sm">joined the Slack group HS Team</p>
+                                </div>
+                                <small class="col-auto text-muted text-cap">3dy</small>
+                              </div>
+                              <a class="stretched-link" href="#"></a>
+                            </li>
+                            <!-- End Item -->
+
+                            <!-- Item -->
+                            <li class="list-group-item custom-checkbox-list-wrapper">
+                              <div class="row">
+                                <div class="col-auto position-static">
+                                  <div class="d-flex align-items-center">
+                                    <div class="custom-control custom-checkbox custom-checkbox-list">
+                                      <input type="checkbox" class="custom-control-input" id="notificationCheck3">
+                                      <label class="custom-control-label" for="notificationCheck3"></label>
+                                      <span class="custom-checkbox-list-stretched-bg"></span>
+                                    </div>
+                                    <div class="avatar avatar-sm avatar-circle">
+                                      <img class="avatar-img" src="./../../../assets/svg/brands/google.svg" alt="Image Description">
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col ml-n3">
+                                  <span class="card-title h5">from Google</span>
+                                  <p class="card-text font-size-sm">Start using forms to capture the information of prospects visiting your Google website</p>
+                                </div>
+                                <small class="col-auto text-muted text-cap">17dy</small>
+                              </div>
+                              <a class="stretched-link" href="#"></a>
+                            </li>
+                            <!-- End Item -->
+
+                            <!-- Item -->
+                            <li class="list-group-item custom-checkbox-list-wrapper">
+                              <div class="row">
+                                <div class="col-auto position-static">
+                                  <div class="d-flex align-items-center">
+                                    <div class="custom-control custom-checkbox custom-checkbox-list">
+                                      <input type="checkbox" class="custom-control-input" id="notificationCheck5">
+                                      <label class="custom-control-label" for="notificationCheck5"></label>
+                                      <span class="custom-checkbox-list-stretched-bg"></span>
+                                    </div>
+                                    <div class="avatar avatar-sm avatar-circle">
+                                      <img class="avatar-img" src="./../../../assets/img/160x160/img7.jpg" alt="Image Description">
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col ml-n3">
+                                  <span class="card-title h5">Sara Villar</span>
+                                  <p class="card-text font-size-sm">completed <i class="tio-folder-bookmarked text-primary"></i> FD-7 task</p>
+                                </div>
+                                <small class="col-auto text-muted text-cap">2mn</small>
+                              </div>
+                              <a class="stretched-link" href="#"></a>
+                            </li>
+                            <!-- End Item -->
+                          </ul>
+                        </div>
+
+                        <div class="tab-pane fade" id="notificationNavTwo" role="tabpanel" aria-labelledby="notificationNavTwo-tab">
+                          <ul class="list-group list-group-flush navbar-card-list-group">
+                            <!-- Item -->
+                            <li class="list-group-item custom-checkbox-list-wrapper">
+                              <div class="row">
+                                <div class="col-auto position-static">
+                                  <div class="d-flex align-items-center">
+                                    <div class="custom-control custom-checkbox custom-checkbox-list">
+                                      <input type="checkbox" class="custom-control-input" id="notificationCheck7">
+                                      <label class="custom-control-label" for="notificationCheck7"></label>
+                                      <span class="custom-checkbox-list-stretched-bg"></span>
+                                    </div>
+                                    <div class="avatar avatar-sm avatar-soft-dark avatar-circle">
+                                      <span class="avatar-initials">A</span>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col ml-n3">
+                                  <span class="card-title h5">Anne Richard</span>
+                                  <p class="card-text font-size-sm">accepted your invitation to join Notion</p>
+                                </div>
+                                <small class="col-auto text-muted text-cap">1dy</small>
+                              </div>
+                              <a class="stretched-link" href="#"></a>
+                            </li>
+                            <!-- End Item -->
+
+                            <!-- Item -->
+                            <li class="list-group-item custom-checkbox-list-wrapper">
+                              <div class="row">
+                                <div class="col-auto position-static">
+                                  <div class="d-flex align-items-center">
+                                    <div class="custom-control custom-checkbox custom-checkbox-list">
+                                      <input type="checkbox" class="custom-control-input" id="notificationCheck6">
+                                      <label class="custom-control-label" for="notificationCheck6"></label>
+                                      <span class="custom-checkbox-list-stretched-bg"></span>
+                                    </div>
+                                    <div class="avatar avatar-sm avatar-circle">
+                                      <img class="avatar-img" src="./../../../assets/img/160x160/img5.jpg" alt="Image Description">
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col ml-n3">
+                                  <span class="card-title h5">Finch Hoot</span>
+                                  <p class="card-text font-size-sm">left Slack group HS projects</p>
+                                </div>
+                                <small class="col-auto text-muted text-cap">3dy</small>
+                              </div>
+                              <a class="stretched-link" href="#"></a>
+                            </li>
+                            <!-- End Item -->
+
+                            <!-- Item -->
+                            <li class="list-group-item custom-checkbox-list-wrapper">
+                              <div class="row">
+                                <div class="col-auto position-static">
+                                  <div class="d-flex align-items-center">
+                                    <div class="custom-control custom-checkbox custom-checkbox-list">
+                                      <input type="checkbox" class="custom-control-input" id="notificationCheck8">
+                                      <label class="custom-control-label" for="notificationCheck8"></label>
+                                      <span class="custom-checkbox-list-stretched-bg"></span>
+                                    </div>
+                                    <div class="avatar avatar-sm avatar-dark avatar-circle">
+                                      <span class="avatar-initials">HS</span>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col ml-n3">
+                                  <span class="card-title h5">Htmlstream</span>
+                                  <p class="card-text font-size-sm">you earned a "Top endorsed" <i class="tio-verified text-primary"></i> badge</p>
+                                </div>
+                                <small class="col-auto text-muted text-cap">6dy</small>
+                              </div>
+                              <a class="stretched-link" href="#"></a>
+                            </li>
+                            <!-- End Item -->
+
+                            <!-- Item -->
+                            <li class="list-group-item custom-checkbox-list-wrapper">
+                              <div class="row">
+                                <div class="col-auto position-static">
+                                  <div class="d-flex align-items-center">
+                                    <div class="custom-control custom-checkbox custom-checkbox-list">
+                                      <input type="checkbox" class="custom-control-input" id="notificationCheck9">
+                                      <label class="custom-control-label" for="notificationCheck9"></label>
+                                      <span class="custom-checkbox-list-stretched-bg"></span>
+                                    </div>
+                                    <div class="avatar avatar-sm avatar-circle">
+                                      <img class="avatar-img" src="./../../../assets/img/160x160/img8.jpg" alt="Image Description">
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col ml-n3">
+                                  <span class="card-title h5">Linda Bates</span>
+                                  <p class="card-text font-size-sm">Accepted your connection</p>
+                                </div>
+                                <small class="col-auto text-muted text-cap">17dy</small>
+                              </div>
+                              <a class="stretched-link" href="#"></a>
+                            </li>
+                            <!-- End Item -->
+
+                            <!-- Item -->
+                            <li class="list-group-item custom-checkbox-list-wrapper">
+                              <div class="row">
+                                <div class="col-auto position-static">
+                                  <div class="d-flex align-items-center">
+                                    <div class="custom-control custom-checkbox custom-checkbox-list">
+                                      <input type="checkbox" class="custom-control-input" id="notificationCheck10">
+                                      <label class="custom-control-label" for="notificationCheck10"></label>
+                                      <span class="custom-checkbox-list-stretched-bg"></span>
+                                    </div>
+                                    <div class="avatar avatar-sm avatar-soft-dark avatar-circle">
+                                      <span class="avatar-initials">L</span>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col ml-n3">
+                                  <span class="card-title h5">Lewis Clarke</span>
+                                  <p class="card-text font-size-sm">completed <i class="tio-folder-bookmarked text-primary"></i> FD-134 task</p>
+                                </div>
+                                <small class="col-auto text-muted text-cap">2mn</small>
+                              </div>
+                              <a class="stretched-link" href="#"></a>
+                            </li>
+                            <!-- End Item -->
+                          </ul>
+                        </div>
+                      </div>
+                      <!-- End Tab Content -->
+                    </div>
+                    <!-- End Body -->
+
+                    <!-- Card Footer -->
+                    <a class="card-footer text-center" href="#">
+                      View all notifications
+                      <i class="tio-chevron-right"></i>
+                    </a>
+                    <!-- End Card Footer -->
+                  </div>
+                </div>
+                <!-- End Notification -->
+              </li>
+              <li class="nav-item">
+                <!-- Account -->
+                <div class="hs-unfold">
+                  <a class="js-hs-unfold-invoker navbar-dropdown-account-wrapper" href="javascript:;"
+                     data-hs-unfold-options='{
+                       "target": "#accountNavbarDropdown",
+                       "type": "css-animation"
+                     }'>
+                    <div class="avatar avatar-sm avatar-circle">
+                      <img class="avatar-img" src="./../../../assets/img/160x160/img6.jpg" alt="Image Description">
+                      <span class="avatar-status avatar-sm-status avatar-status-success"></span>
+                    </div>
+                  </a>
+
+                  <div id="accountNavbarDropdown" class="hs-unfold-content dropdown-unfold dropdown-menu dropdown-menu-right navbar-dropdown-menu navbar-dropdown-account" style="width: 16rem;">
+                    <div class="dropdown-item">
+                      <div class="media align-items-center">
+                        <div class="avatar avatar-sm avatar-circle mr-2">
+                          <img class="avatar-img" src="./../../../assets/img/160x160/img6.jpg" alt="Image Description">
+                        </div>
+                        <div class="media-body">
+                          <span class="card-title h5">Mark Williams</span>
+                          <span class="card-text">mark@example.com</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="dropdown-divider"></div>
+
+                    <!-- Unfold -->
+                    <div class="hs-unfold w-100">
+                      <a class="js-hs-unfold-invoker navbar-dropdown-submenu-item dropdown-item d-flex align-items-center" href="javascript:;"
+                         data-hs-unfold-options='{
+                           "target": "#navSubmenuPagesAccountDropdown1",
+                           "event": "hover"
+                         }'>
+                        <span class="text-truncate pr-2" title="Set status">Set status</span>
+                        <i class="tio-chevron-right navbar-dropdown-submenu-item-invoker ml-auto"></i>
+                      </a>
+
+                      <div id="navSubmenuPagesAccountDropdown1" class="hs-unfold-content hs-unfold-has-submenu dropdown-unfold dropdown-menu navbar-dropdown-sub-menu">
+                        <a class="dropdown-item" href="#">
+                          <span class="legend-indicator bg-success mr-1"></span>
+                          <span class="text-truncate pr-2" title="Available">Available</span>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                          <span class="legend-indicator bg-danger mr-1"></span>
+                          <span class="text-truncate pr-2" title="Busy">Busy</span>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                          <span class="legend-indicator bg-warning mr-1"></span>
+                          <span class="text-truncate pr-2" title="Away">Away</span>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">
+                          <span class="text-truncate pr-2" title="Reset status">Reset status</span>
+                        </a>
+                      </div>
+                    </div>
+                    <!-- End Unfold -->
+
+                    <a class="dropdown-item" href="#">
+                      <span class="text-truncate pr-2" title="Profile &amp; account">Profile &amp; account</span>
+                    </a>
+
+                    <a class="dropdown-item" href="#">
+                      <span class="text-truncate pr-2" title="Settings">Settings</span>
+                    </a>
+
+                    <div class="dropdown-divider"></div>
+
+                    <a class="dropdown-item" href="#">
+                      <div class="media align-items-center">
+                        <div class="avatar avatar-sm avatar-dark avatar-circle mr-2">
+                          <span class="avatar-initials">HS</span>
+                        </div>
+                        <div class="media-body">
+                          <span class="card-title h5">Htmlstream <span class="badge badge-primary badge-pill text-uppercase ml-1">PRO</span></span>
+                          <span class="card-text">hs.example.com</span>
+                        </div>
+                      </div>
+                    </a>
+
+                    <div class="dropdown-divider"></div>
+
+                    <!-- Unfold -->
+                    <div class="hs-unfold w-100">
+                      <a class="js-hs-unfold-invoker navbar-dropdown-submenu-item dropdown-item d-flex align-items-center" href="javascript:;"
+                         data-hs-unfold-options='{
+                           "target": "#navSubmenuPagesAccountDropdown2",
+                           "event": "hover"
+                         }'>
+                        <span class="text-truncate pr-2" title="Customization">Customization</span>
+                        <i class="tio-chevron-right navbar-dropdown-submenu-item-invoker  ml-auto"></i>
+                      </a>
+
+                      <div id="navSubmenuPagesAccountDropdown2" class="hs-unfold-content hs-unfold-has-submenu dropdown-unfold dropdown-menu navbar-dropdown-sub-menu">
+                        <a class="dropdown-item" href="#">
+                          <span class="text-truncate pr-2" title="Invite people">Invite people</span>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                          <span class="text-truncate pr-2" title="Analytics">Analytics</span>
+                          <i class="tio-open-in-new"></i>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                          <span class="text-truncate pr-2" title="Customize Fis">Customize Fis</span>
+                          <i class="tio-open-in-new"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <!-- End Unfold -->
+
+                    <a class="dropdown-item" href="#">
+                      <span class="text-truncate pr-2" title="Manage team">Manage team</span>
+                    </a>
+
+                    <div class="dropdown-divider"></div>
+
+                    <a class="dropdown-item" href="#">
+                      <span class="text-truncate pr-2" title="Sign out">Sign out</span>
+                    </a>
+                  </div>
+                </div>
+                <!-- End Account -->
+              </li>
+            </ul>
+            <!-- End Navbar -->
+          </div>
+          <!-- End Secondary Content -->
+        </div>
+      </header>
+    
+
+    
+
+    
+    <!-- ========== END HEADER ========== -->
+
+    <!-- ========== MAIN CONTENT ========== -->
+    <!-- Navbar Vertical -->
+    
+    <aside class="js-navbar-vertical-aside navbar navbar-vertical-aside navbar-vertical navbar-vertical-fixed navbar-expand-xl navbar-bordered  ">
+      <div class="navbar-vertical-container">
+        <div class="navbar-vertical-footer-offset">
+          <div class="navbar-brand-wrapper justify-content-between">
+            <!-- Logo -->
+            
+            
+              <a class="navbar-brand" href="./index.html" aria-label="Fis">
+                <img class="navbar-brand-logo" src="./../../../assets/img/160x160/logo 3.svg" alt="Logo">
+                <img class="navbar-brand-logo-mini" src="./../../../assets/img/160x160/logo 3.svg" alt="Logo">
+              </a>
+            
+            <!-- End Logo -->
+
+            <!-- Navbar Vertical Toggle -->
+            <button type="button" class="js-navbar-vertical-aside-toggle-invoker navbar-vertical-aside-toggle btn btn-icon btn-xs btn-ghost-dark">
+              <i class="tio-clear tio-lg"></i>
+            </button>
+            <!-- End Navbar Vertical Toggle -->
+          </div>
+
+          <!-- Content -->
+          <div class="navbar-vertical-content">
+            <ul class="navbar-nav navbar-nav-lg nav-tabs">
+              <!-- Dashboards -->
+              <li class="navbar-vertical-aside-has-menu badge-light">
+                <a class="js-navbar-vertical-aside-menu-link nav-link nav-link-toggle active" href="javascript:;" title="Dashboards">
+                  <i class="nav-icon"><img src="./../../../assets/img/160x160/List title/icon/outlined/application/Vector.png" alt="logo"></i>
+                  <span class="navbar-vertical-aside-mini-mode-hidden-elements d-block h5 text-hover-primary mb-0 text-truncate">
+                      Ebidding<span class="d-block d-block font-size-sm text-body">LCNT trong phạm vi</span>
+                  </span>
+                </a>
+
+                <ul class="js-navbar-vertical-aside-submenu nav nav-sub">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="idne_chonnhathau_duanpt.html" title="LCNT trong phạm vi">
+                      <span class="nav-indicator-icon"></span>
+                      <span class="text-truncate">LCNT trong phạm vi</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href="EDB_NPV.html" title="LCNT ngoài phạm vi">
+                      <span class="nav-indicator-icon"></span>
+                      <span class="text-truncate">LCNT ngoài phạm vi</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link " href="#" title="Lựa chọn nhà thầu">
+                        <span class="nav-indicator-icon"></span>
+                        <span class="text-truncate">Lựa chọn nhà thầu</span>
+                      </a>
+                  </li>
+                </ul>
+              </li>
+              <!-- End Dashboards -->
+              <li class="nav-item active" style="height: 40px;">
+                  <a class="js-nav-tooltip-link nav-link " href="#" title="Welcome page" data-placement="left">
+                    <div class="icon nav-icon">
+                      <img class="avatar-img" src="./../../../assets/img/160x160/icon1/icon/outlined/application/Vector.svg" style="width: 16.67px;height: 16.67px;top: 1.67px;top: 1.67px;" alt="Image Description">
+                    </div>
+                    <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">Dự án</span>
+                  </a>
+                </li>
+                <li class="nav-item" style="width: 205px;height: 40px;">
+                  <a class="js-nav-tooltip-link nav-link " href="#" title="Welcome page" data-placement="left">
+                    <div class="icon nav-icon">
+                      <img class="avatar-img" src="./../../../assets/img/160x160/icon/outlined/application/Vector.svg" style="width: 16.67px;height: 16.67px;top: 1.67px;top: 1.67px;" alt="Image Description">
+                    </div>
+                    <span style="width: 185px;" class="navbar-vertical-aside-mini-mode-hidden-elements">Bảng tổng hợp nhu cầu MSTT</span>
+                  </a>
+                </li>
+                <li class="nav-item" style="height: 40px;">
+                  <a class="js-nav-tooltip-link nav-link " href="Add_KeHoach.html" title="Welcome page" data-placement="left">
+                    <div class="icon nav-icon">
+                      <img class="avatar-img" src="./../../../assets/img/160x160/icon2/icon/outlined/application/Vector.svg" style="width: 16.67px;height: 16.67px;top: 1.67px;top: 1.67px;" alt="Image Description">
+                    </div>
+                    <span class="navbar-vertical-aside-mini-mode-hidden-elements" style="width: 165px">Kế hoạch lựa chọn nhà thầu</span>
+                  </a>
+                </li>
+                <li class="nav-item " style="height: 40px;">
+                  <a class="js-nav-tooltip-link nav-link " href="#" title="Welcome page" data-placement="left">
+                    <div class="icon nav-icon">
+                      <img class="avatar-img" src="./../../../assets/img/160x160/icon3/icon/outlined/application/Vector.svg" style="width: 16.67px;height: 16.67px;top: 1.67px;top: 1.67px;" alt="Image Description">
+                    </div>
+                    <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">Lựu chọn danh sách ngắn</span>
+                  </a>
+                </li>
+                <!-- End Pages -->
+                <li class="nav-item " style="height: 40px;">
+                  <a class="js-nav-tooltip-link nav-link " href="#" title="Welcome page" data-placement="left">
+                    <div class="icon nav-icon">
+                      <img class="avatar-img" src="./../../../assets/img/160x160/icon4/icon/outlined/application/Vector.svg" style="width: 16.67px;height: 16.67px;top: 1.67px;top: 1.67px;" alt="Image Description">
+                    </div>
+                    <span class="navbar-vertical-aside-mini-mode-hidden-elements" style="width: 150px;">Chuẩn bị, tổ chức lựa chọn NT</span>
+                  </a>
+                </li>
+                <li class="nav-item " style="height: 40px;">
+                  <a class="js-nav-tooltip-link nav-link " href="#" title="Welcome page" data-placement="left">
+                    <div class="icon nav-icon">
+                      <img class="avatar-img" src="./../../../assets/img/160x160/icon5/icon/outlined/application/Vector.svg" style="width: 16.67px;height: 16.67px;top: 1.67px;top: 1.67px;" alt="Image Description">
+                    </div>
+                    <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">Đánh giá hồ sơ dự thầu</span>
+                  </a>
+                </li>
+                <li class="nav-item " style="height: 40px;">
+                  <a class="js-nav-tooltip-link nav-link " href="#" title="Welcome page" data-placement="left">
+                    <div class="icon nav-icon">
+                      <img class="avatar-img" src="./../../../assets/img/160x160/icon6/icon/outlined/application/Vector.svg" style="width: 16.67px;height: 16.67px;top: 1.67px;top: 1.67px;" alt="Image Description">
+                    </div>
+                    <span class="navbar-vertical-aside-mini-mode-hidden-elements" style="width: 150px;">Chuẩn bị, tổ chức chào lại giá</span>
+                  </a>
+                </li>
+                <li class="nav-item " style="height: 40px;">
+                  <a class="js-nav-tooltip-link nav-link " href="#" title="Welcome page" data-placement="left">
+                    <div class="icon nav-icon">
+                      <img class="avatar-img" src="./../../../assets/img/160x160/icon7/icon/outlined/application/Vector.svg" style="width: 16.67px;height: 16.67px;top: 1.67px;top: 1.67px;" alt="Image Description">
+                    </div>
+                    <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">Lựa chọn kết quả nhà thầu</span>
+                  </a>
+                </li>
+                <li class="nav-item " style="height: 40px;">
+                  <a class="js-nav-tooltip-link nav-link " href="#" title="Welcome page" data-placement="left">
+                    <div class="icon nav-icon">
+                      <img class="avatar-img" src="./../../../assets/img/160x160/icon8/icon/outlined/application/Vector.svg" style="width: 16.67px;height: 16.67px;top: 1.67px;top: 1.67px;" alt="Image Description">
+                    </div>
+                    <span class="navbar-vertical-aside-mini-mode-hidden-elements" style="width: 150px;">Hoàn thiện, ký kết hợp đồng</span>
+                  </a>
+                </li>
+                <li class="nav-item " style="height: 40px;">
+                  <a class="js-nav-tooltip-link nav-link " href="#" title="Welcome page" data-placement="left">
+                    <div class="icon nav-icon">
+                      <img class="avatar-img" src="./../../../assets/img/160x160/icon9/icon/outlined/application/Vector.svg" style="width: 16.67px;height: 16.67px;top: 1.67px;top: 1.67px;" alt="Image Description">
+                    </div>
+                    <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">Tiện ích đấu thầu</span>
+                  </a>
+                </li>
+            </ul>
+          </div>
+          <!-- End Content -->
+
+          <!-- Footer -->
+          <div class="navbar-vertical-footer">
+            <ul class="navbar-vertical-footer-list">
+              <li class="navbar-vertical-footer-list-item">
+                <!-- Unfold -->
+                <div class="hs-unfold">
+                  <a class="js-hs-unfold-invoker btn btn-icon btn-ghost-secondary"
+                     data-hs-unfold-options='{
+                      "target": "#styleSwitcherDropdown",
+                      "type": "css-animation",
+                      "animationIn": "fadeInRight",
+                      "animationOut": "fadeOutRight",
+                      "hasOverlay": true,
+                      "smartPositionOff": true
+                     }'>
+                   <img src="./../../../assets/img/160x160/logo 4.jpg" alt="logo">
+                  </a>
+                </div>
+                <!-- End Unfold -->
+              </li>
+
+              <li class="navbar-vertical-footer-list-item">
+                <!-- Other Links -->
+                <div class="hs-unfold">
+                  <a class="js-hs-unfold-invoker btn btn-icon btn-ghost-secondary" href="javascript:;"
+                     data-hs-unfold-options='{
+                      "type": "css-animation",
+                      "animationIn": "slideInDown",
+                      "hideOnScroll": true
+                     }'>
+                  </a>
+                </div>
+                <!-- End Other Links -->
+              </li>
+
+              <li class="navbar-vertical-footer-list-item">
+                <!-- Language -->
+                <div class="hs-unfold">
+                  <a class="js-hs-unfold-invoker btn btn-icon btn-ghost-secondary rounded-circle" href="javascript:;"
+                     data-hs-unfold-options='{
+                      "target": "#languageDropdown",
+                      "type": "css-animation",
+                      "animationIn": "slideInDown",
+                      "hideOnScroll": true
+                     }'>
+                    <img class="avatar avatar-xss avatar-circle" src="./../../../assets/vendor/flag-icon-css/flags/1x1/us.svg" alt="United States Flag">
+                  </a>
+
+                  <div id="languageDropdown" class="hs-unfold-content dropdown-unfold dropdown-menu navbar-vertical-footer-dropdown">
+                    <span class="dropdown-header">Select language</span>
+                    <a class="dropdown-item" href="#">
+                      <img class="avatar avatar-xss avatar-circle mr-2" src="./../../../assets/vendor/flag-icon-css/flags/1x1/us.svg" alt="Flag">
+                      <span class="text-truncate pr-2" title="English">English (US)</span>
+                    </a>
+                    <a class="dropdown-item" href="#">
+                      <img class="avatar avatar-xss avatar-circle mr-2" src="./../../../assets/vendor/flag-icon-css/flags/1x1/gb.svg" alt="Flag">
+                      <span class="text-truncate pr-2" title="English">English (UK)</span>
+                    </a>
+                    <a class="dropdown-item" href="#">
+                      <img class="avatar avatar-xss avatar-circle mr-2" src="./../../../assets/vendor/flag-icon-css/flags/1x1/de.svg" alt="Flag">
+                      <span class="text-truncate pr-2" title="Deutsch">Deutsch</span>
+                    </a>
+                    <a class="dropdown-item" href="#">
+                      <img class="avatar avatar-xss avatar-circle mr-2" src="./../../../assets/vendor/flag-icon-css/flags/1x1/dk.svg" alt="Flag">
+                      <span class="text-truncate pr-2" title="Dansk">Dansk</span>
+                    </a>
+                    <a class="dropdown-item" href="#">
+                      <img class="avatar avatar-xss avatar-circle mr-2" src="./../../../assets/vendor/flag-icon-css/flags/1x1/it.svg" alt="Flag">
+                      <span class="text-truncate pr-2" title="Italiano">Italiano</span>
+                    </a>
+                    <a class="dropdown-item" href="#">
+                      <img class="avatar avatar-xss avatar-circle mr-2" src="./../../../assets/vendor/flag-icon-css/flags/1x1/cn.svg" alt="Flag">
+                      <span class="text-truncate pr-2" title="中文 (繁體)">中文 (繁體)</span>
+                    </a>
+                  </div>
+                </div>
+                <!-- End Language -->
+              </li>
+            </ul>
+          </div>
+          <!-- End Footer -->
+        </div>
+      </div>
+    </aside>
+    
+
+    
+    <!-- End Navbar Vertical -->
+
+    <main id="content" role="main" class="main">
+      <!-- Content -->
+      <div class="content container-fluid">
+        <!-- Page Header -->
+        <div class="page-header">
+          <div class="row align-items-end">
+            <div class="col-sm mb-2 mb-sm-0">
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb breadcrumb-no-gutter">
+                  <li class="breadcrumb-item" data-toggle="modal" data-target="#staticBackdrop"><a class="breadcrumb-link">Dự án phát triển đầu tư</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Tạo dự án</li>
+                </ol>
+              </nav>
+              
+              <!-- Modal -->
+              <div class="modal fade" id="staticBackdrop" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div style="width: 340px;height: 158px;" class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <button style="margin-left: 9.5rem;" type="button" class="btn btn-xs btn-pill btn-icon btn-ghost-secondary" data-dismiss="modal" aria-label="Close">
+                      <i class="tio-clear tio-lg"></i>
+                    </button>
+                    <div class="modal-header">
+                      <h5 class="modal-title text-center" id="staticBackdropLabel" style="margin-left: 3.5rem;">Bạn có muốn thoát ra ngoài</h5>
+                    </div>
+                    <div class="modal-body">
+                      <p style="margin-left: 2.5rem;">Mọi dữ liệu bạn đã nhập sẽ bị mất</p>
+                      <button type="button" class="btn btn-danger" data-dismiss="modal" style="width: 140px;height: 40px;">Thoát</button>
+                      <button type="button" class="btn" style="background-color: #064D69;color: white;width: 140px;height: 40px;">Lưu file và thoát</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Modal -->
+
+              <h1 class="page-title">Tạo dự án đầu tư phát triển</h1>
+            </div>
+
+            <div class="col-sm-auto">
+              <a class="btn btn-white" href="idne_chonnhathau_duanpt.html">
+                <i class="mr-1"></i> Dự án đầu tư phát triển
+              </a>
+            </div>
+          </div>
+          <!-- End Row -->
+        </div>
+        <!-- End Page Header -->
+        
+        <!-- Step Form -->
+        <form style="margin-left: 5rem; margin-right: 5rem;" class="js-step-form py-md-0" id="stepForm"
+              data-hs-step-form-options='{
+                "progressSelector": "#addUserStepFormProgress",
+                "stepsSelector": "#addUserStepFormContent",
+                "endSelector": "#addUserFinishBtn",
+                "isValidate": false
+              }'>
+              <!-- Step -->
+              <ul id="addUserStepFormProgress" class="js-step-progress step step-sm step-icon-sm step step-inline step-item-between mb-3 mb-md-5">
+                <li class="step-item">
+                  <a class="step-content-wrapper" href="#addThongTin;"
+                     data-hs-step-form-next-options='{
+                      "targetSelector": "#addThongTin"
+                    }'>
+                    <span class="step-icon step-icon-soft-dark">01</span>
+                    <div class="step-content">
+                      <small><span class="step-title" style="color: black;">Thông tin cơ bản</span></small>
+                    </div>
+                  </a>
+                </li>
+
+                <li class="step-item">
+                  <a class="step-content-wrapper" href="#addTongMuc;"
+                     data-hs-step-form-next-options='{
+                      "targetSelector": "#addTongMuc"
+                    }'>
+                    <span class="step-icon step-icon-soft-dark">02</span>
+                    <div class="step-content">
+                      <small><span class="step-title">Tổng mức đầu tư</span></small>
+                    </div>
+                  </a>
+                </li>
+                <li class="step-item">
+                  <a class="step-content-wrapper" href="#addQuyetDinh;"
+                     data-hs-step-form-next-options='{
+                      "targetSelector": "#addQuyetDinh"
+                    }'>
+                    <span class="step-icon step-icon-soft-dark">03</span>
+                    <div class="step-content">
+                      <small><span class="step-title">Quyết định phê duyệt</span></small>
+                    </div>
+                  </a>
+                </li>
+                <li class="step-item">
+                  <a class="step-content-wrapper" href="#addXacNhan;"
+                     data-hs-step-form-next-options='{
+                      "targetSelector": "#addXacNhan"
+                    }'>
+                    <span class="step-icon step-icon-soft-dark">04</span>
+                    <div class="step-content">
+                      <small><span class="step-title">Xác nhận thông tin</span></small>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+              <!-- End Step -->
+          <div class="row justify-content-lg-center hs-nav-scroller-unfold">
+            <div class="col-lg-11">
+              <!-- Content Step Form -->
+              <div id="addUserStepFormContent">
+                <!-- Card -->
+                <div id="addThongTin" class="card card-lg active js-validate">
+                  <div class="card-header">
+                    <div class="card-header-title mr-2" style="color: black;">Thông tin cơ bản</div>
+                    <div class="hs-unfold mr-2">
+                      <a style="color: #064D69;border-color: #064D69;" class="js-hs-unfold-invoker btn btn-sm btn-dashed-outline btn-white" href="javascript:;">
+                     <i class="tio-download-from-cloud mr-1"></i><span>Nhận dữ liệu từ hệ thống đầu tư công</span>
+                   </a>
+                    </div>
+                  </div>
+                  <!-- Card Body -->
+                  <div class="card-body" style="max-height: 820px;">
+                    <!-- Form Group -->
+                    <div class="row form-group">
+                      <label class="col-sm-3 col-form-label input-label" for="MaLabel" style="color: #595959;">Mã quan hệ ngân sách</label>
+
+                      <div class="col-sm-9">
+                        <div class="d-flex align-items-center input-group input-group-sm-down-break">
+                          <input type="text" class="form-control" name="text" id="MaLabel">
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Form Group -->
+
+                    <!-- Form Group -->
+                    <div class="row form-group">
+                      <label for="firstNameLabel" class="col-sm-3 col-form-label input-label" style="color: #595959;">Tên dự án<span style="color: red;">*</span></label>
+
+                      <div class="col-sm-9 js-form-message">
+                        <div class="input-group input-group-sm-down-break">
+                          <input type="text" class="form-control" name="firstName" id="ThongbaoLabel" required>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Form Group -->
+
+                    <!-- Form Group -->
+                    <div class="row form-group">
+                      <label for="MucTieuLabel" class="col-sm-3 col-form-label input-label" style="color: #595959;">Mục tiêu đầu tư<span style="color: red;">*</span></label>
+
+                      <div class="col-sm-9">
+                        <input type="text" class="form-control" name="MucTieu" id="MucTieuLabel">
+                      </div>
+                    </div>
+                    <!-- End Form Group -->
+                    
+                    <!-- Form Group -->
+                    <div class="row form-group">
+                      <label for="QuyMoLabel" class="col-sm-3 col-form-label input-label" style="color: #595959;">Quy mô đầu tư<span style="color: red;">*</span></label>
+
+                      <div class="col-sm-9">
+                        <input type="text" class="form-control" name="QuyMo" id="QuyMoLabel">
+                      </div>
+                    </div>
+                    <!-- End Form Group -->
+
+                    <!-- Form Group -->
+                    <div class="row form-group">
+                      <label for="ChuDTLabel" class="col-sm-3 col-form-label input-label" style="color: #595959;">Chủ đầu tư<span style="color: red;">*</span></label>
+
+                      <div class="col-sm-9">
+                        <input type="text" class="form-control" name="ChuDauTu" id="ChuDTLabel">
+                      </div>
+                    </div>
+                    <!-- End Form Group -->
+                    
+                    <!-- Form Group -->
+                    <div class="row form-group">
+                      <label for="NCTQLabel" class="col-sm-3 col-form-label input-label" style="color: #595959;">Người có thẩm quyền<span style="color: red;">*</span></label>
+
+                      <form class="">
+                      <div class="col-sm-9">
+                        <input type="text" class="form-control" name="NCTQ" id="NCTQLabel">
+                      </div>
+                    </form>
+                    </div>
+                    <!-- End Form Group -->
+
+                    <!-- Form Group -->
+                    <div class="row form-group">
+                      <label for="TGLabel" class="col-sm-3 col-form-label input-label" style="color: #595959;">Thời gian thực hiện<span style="color: red;">*</span></label>
+
+                      <div class="col-sm-9" style="max-width: 17rem;">
+                        <!-- Flatpickr -->
+                        <input role="timer" class="js-flatpickr form-control flatpickr-custom" placeholder="dd/mm/yyyy"
+                               data-hs-flatpickr-options='{
+                                 "dateFormat": "d/m/Y"
+                               }'>                          
+                        <!-- End Flatpickr -->
+                      </div>
+                    </div>
+                    <!-- End Form Group -->
+
+                    <!-- Form Group -->
+                    <div class="row form-group">
+                      <label for="NCTQLabel" class="col-sm-3 col-form-label input-label" style="color: #595959;">Nhóm dự án<span style="color: red;">*</span></label>
+
+                      <div class="col-sm-9">
+                        <!-- Select2 -->
+                        <select class="js-select2-custom"
+                                data-hs-select2-options='{
+                                  "minimumResultsForSearch": "Infinity",
+                                  "placeholder": "Chọn"
+                                }'>
+                              <option label="empty"></option>
+                              <option value="1">Bruce Maynard</option>
+                              <option value="2">Hollis Clark</option>
+                              <option value="3">Lester Howard</option>
+                              <option value="4">George Marino</option>
+                              <option value="5">Tyler Johnson</option>
+                              <option value="6">Jennifer Craig</option>
+                              <option value="7">Martha Barnwell</option>
+                              <option value="8">Florencia Todd</option>
+                              <option value="9">Henry Sloan</option>
+                              <option value="10">Abigail Watson</option>
+                        </select>
+                        <!-- End Select2 -->
+                      </div>
+                    </div>
+                    <!-- End Form Group -->
+
+                    <!-- Form Group -->
+                    <div class="row form-group">
+                      <label for="NCTQLabel" class="col-sm-3 col-form-label input-label" style="color: #595959;">Hình thức quản lý dự án<span style="color: red;">*</span></label>
+
+                      <div class="col-sm-9">
+                        <!-- Select2 -->
+                        <select class="js-select2-custom"
+                                data-hs-select2-options='{
+                                  "minimumResultsForSearch": "Infinity",
+                                  "placeholder": "Chọn"
+                                }'>
+                              <option label="empty"></option>
+                              <option value="1">Bruce Maynard</option>
+                              <option value="2">Hollis Clark</option>
+                              <option value="3">Lester Howard</option>
+                              <option value="4">George Marino</option>
+                              <option value="5">Tyler Johnson</option>
+                              <option value="6">Jennifer Craig</option>
+                              <option value="7">Martha Barnwell</option>
+                              <option value="8">Florencia Todd</option>
+                              <option value="9">Henry Sloan</option>
+                              <option value="10">Abigail Watson</option>
+                        </select>
+                        <!-- End Select2 -->
+                      </div>
+                    </div>
+                    <!-- End Form Group -->
+
+                    <!-- Form Group -->
+                    <div class="row form-group">
+                      <label for="NCTQLabel" class="col-sm-3 col-form-label input-label" style="color: #595959;">Hình thức đầu tư<span style="color: red;">*</span></label>
+
+                      <div class="col-sm-9">
+                        <!-- Select2 -->
+                        <select class="js-select2-custom"
+                                data-hs-select2-options='{
+                                  "minimumResultsForSearch": "Infinity",
+                                  "placeholder": "Chọn"
+                                }'>
+                              <option label="empty"></option>
+                              <option value="1">Bruce Maynard</option>
+                              <option value="2">Hollis Clark</option>
+                              <option value="3">Lester Howard</option>
+                              <option value="4">George Marino</option>
+                              <option value="5">Tyler Johnson</option>
+                              <option value="6">Jennifer Craig</option>
+                              <option value="7">Martha Barnwell</option>
+                              <option value="8">Florencia Todd</option>
+                              <option value="9">Henry Sloan</option>
+                              <option value="10">Abigail Watson</option>
+                        </select>
+                        <!-- End Select2 -->
+                      </div>
+                    </div>
+                    <!-- End Form Group -->
+
+                    <!-- Form Group -->
+                    <!-- <div class="row form-group">
+                      <label class="col-sm-3 col-form-label input-label" style="color: #595959;">Có sử dụng vốn ODA ?</label>
+    
+                          <div class="col-sm-9">
+                            <div class="input-group input-group-sm-down-break align-items-center">
+                              <div class="col-sm-6 form-control">
+                                <div class="custom-control custom-radio">
+                                  <input type="radio" class="custom-control-input" name="userAccountTypeRadio" id="userAccountTypeRadio1">
+                                  <label style="color: #BFBFBF;" class="custom-control-label" for="userAccountTypeRadio1">Có</label>
+                                </div>
+                              </div>
+                              <label class="col-sm-1 col-form-label input-label"></label>
+                              <div class="col-sm-6 form-control">
+                                <div class="custom-control custom-radio">
+                                  <input type="radio" class="custom-control-input" name="userAccountTypeRadio" id="userAccountTypeRadio1">
+                                  <label style="color: #BFBFBF;" class="custom-control-label" for="userAccountTypeRadio1">Không</label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </div> -->
+                    <!-- End Form Group -->
+                    
+                    <!-- Form Group -->
+                    <div class="row">
+                      <label for="NCTQLabel" class="col-sm-3 col-form-label input-label" style="color: #595959;">Địa điểm thực hiện</label>
+
+                      <div class="col-sm-9">
+                        <!-- Select2 -->
+                        <select class="js-select2-custom" multiple
+                                data-hs-select2-options='{
+                                  "minimumResultsForSearch": "Infinity"
+                                }'>
+                              <option value="1" selected>Thêm địa điểm</option>
+                              <option value="2">Hollis Clark</option>
+                              <option value="3">Lester Howard</option>
+                              <option value="4">George Marino</option>
+                              <option value="5">Tyler Johnson</option>
+                              <option value="6">Jennifer Craig</option>
+                              <option value="7">Martha Barnwell</option>
+                              <option value="8">Florencia Todd</option>
+                              <option value="9">Henry Sloan</option>
+                              <option value="10">Abigail Watson</option>
+                        </select>
+                        <!-- End Select2 -->
+                      </div>
+                    </div>
+                    <!-- End Form Group -->
+                  </div>
+                  <!-- End Body -->
+                </div>
+                <!-- End Card -->
+
+                <div id="addTongMuc" class="card card-lg" style="display: none;">
+                  <div class="card-header">
+                    <div class="card-header-title" style="color: black;">Tổng mức đầu tư</div>
+                  </div>
+                  <!-- Body -->
+                  <div class="card-body">
+                    <!-- Form Group -->
+                    <div class="js-add-field row form-group">
+                      <label for="phoneLabel" class="col-sm-3 col-form-label input-label">Tổng mức đầu tư</label>
+
+                      <div class="col-sm-9">
+                        <div class="input-group input-group-sm-down-break align-items-center">
+                          <input type="text" class="js-masked-input form-control col-sm-3" name="vnd" id="vndLabel">
+                          <div class="col-sm-3">
+                            <div class="input-group-append">
+                              <!-- Select -->
+                              <div class="select2-custom">
+                                <select class="js-select2-custom" name="phoneSelect"
+                                      data-hs-select2-options='{
+                                        "minimumResultsForSearch": "Infinity",
+                                        "dropdownAutoWidth": true,
+                                        "width": "5rem"
+                                      }'>
+                                  <option value="vnd" selected>VND</option>
+                                  <option value="#">#</option>
+                                  <option value="#">#</option>
+                                  <option value="#">#</option>
+                                  <option value="#">#</option>
+                                </select>
+                                <!-- End Select -->
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <!-- Form Group -->
+                    <div class="js-add-field row form-group">
+                      <label for="phoneLabel" class="col-sm-3 col-form-label input-label"></label>
+
+                      <div class="col-sm-9">
+                        <div class="input-group input-group-sm-down-break align-items-center">
+                          <input type="text" class="js-masked-input form-control col-sm-3" name="vnd" id="vndLabel">
+                          <div class="col-sm-3">
+                            <div class="input-group-append">
+                              <!-- Select -->
+                              <div class="select2-custom">
+                                <select class="js-select2-custom" name="phoneSelect"
+                                      data-hs-select2-options='{
+                                        "minimumResultsForSearch": "Infinity",
+                                        "dropdownAutoWidth": true,
+                                        "width": "5rem"
+                                      }'>
+                                  <option value="vnd" selected>USD</option>
+                                  <option value="#">#</option>
+                                  <option value="#">#</option>
+                                  <option value="#">#</option>
+                                  <option value="#">#</option>
+                                </select>
+                                <!-- End Select -->
+                              </div>
+                            </div>
+                          </div>
+                          <label for="TyGia1Label" class="col-sm-3 col-form-label input-label">Tỷ giá USD/VND</label>
+                          <div class="col-sm-3">
+                            <input type="text" class="form-control" name="TyGia1" id="TyGia1Label">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Form Group -->
+                    
+                    <!-- Form Group -->
+                    <div class="js-add-field row form-group">
+                      <label for="phoneLabel" class="col-sm-3 col-form-label input-label"></label>
+
+                      <div class="col-sm-9">
+                        <div class="input-group input-group-sm-down-break align-items-center">
+                          <input type="text" class="js-masked-input form-control col-sm-3" name="vnd" id="vndLabel">
+                          <div class="col-sm-3">
+                            <div class="input-group-append">
+                              <!-- Select -->
+                              <div class="select2-custom">
+                                <select class="js-select2-custom" name="phoneSelect"
+                                      data-hs-select2-options='{
+                                        "minimumResultsForSearch": "Infinity",
+                                        "dropdownAutoWidth": true,
+                                        "width": "5rem"
+                                      }'>
+                                  <option value="vnd" selected>EUR</option>
+                                  <option value="#">#</option>
+                                  <option value="#">#</option>
+                                  <option value="#">#</option>
+                                  <option value="#">#</option>
+                                </select>
+                                <!-- End Select -->
+                              </div>
+                            </div>
+                          </div>
+                          <label for="TyGia1Label" class="col-sm-3 col-form-label input-label">Tỷ giá EUR/VND</label>
+                          <div class="col-sm-3">
+                            <input type="text" class="form-control" name="TyGia1" id="TyGia1Label">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Form Group -->
+
+                    <!-- Form Group -->
+                    <div class="js-add-field row form-group">
+                      <label for="vnd1Label" class="col-sm-3 col-form-label input-label">Tổng mức đầu tư</label>
+
+                      <div class="col-sm-9">
+                        <div class="input-group input-group-sm-down-break align-items-center">
+                          <input type="text" class="js-masked-input form-control col-sm-3" name="vnd" id="vnd1Label">
+                          <div class="col-sm-3">
+                            <div class="input-group-append">
+                              <!-- Select -->
+                              <div class="select2-custom">
+                                <select class="js-select2-custom" name="vndSelect"
+                                      data-hs-select2-options='{
+                                        "minimumResultsForSearch": "Infinity",
+                                        "dropdownAutoWidth": true,
+                                        "width": "5rem"
+                                      }'>
+                                  <option value="vnd" selected>VND</option>
+                                  <option value="#">#</option>
+                                  <option value="#">#</option>
+                                  <option value="#">#</option>
+                                  <option value="#">#</option>
+                                </select>
+                                <!-- End Select -->
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Form Group -->
+
+                    <!-- Form Group -->
+                    <div class="row form-group">
+                      <label for="vndLabel" class="col-sm-3 col-form-label input-label">Tổng mức đàu tư quy đổi về VND</label>
+
+                      <div class="col-sm-9">
+                        <div class="input-group input-group-merge input-group-light">
+                          <input style="max-width: 17.5rem;; height: 48px;" type="number" class="form-control" name="vnd" id="vndLabel" aria-label="vnd" aria-describedby="inputDateVND">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text" id="inputDateVND">
+                              VND
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Form Group -->
+
+                    <!-- Form Group -->
+                    <div class="js-add-field row form-group">
+                      <label for="TGianLabel" class="col-sm-3 col-form-label input-label">Thời điểm quy đổi tỷ giá</label>
+
+                      <div class="col-sm-9">
+                        <div class="input-group input-group-sm-down-break">
+                          <div style="max-width: 10.5rem;" class="input-group input-group-light">
+                            <!-- Flatpickr -->
+                            <input type="text" id="js-flatpickr-disabling-dates" class="form-control flatpickr-custom" placeholder="Select dates"
+                                   data-hs-flatpickr-options='{
+                                     "dateFormat": "d/m/Y"
+                                   }'>
+                            <!-- End Flatpickr -->
+                          </div>
+
+                          <div style="max-width: 9rem;"  class="form-group input-group-light col-auto">
+                            <input type="time" class="form-control" placeholder="hh/mm" id="TimeLabel">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Form Group -->
+
+                    <!-- Form Group -->
+                    <div class="row form-group">
+                      <label for="zipCodeLabel" class="col-sm-3 col-form-label input-label">Số tiền bằng chữ</label>
+
+                      <div class="col-sm-9 input-group-light">
+                        <input type="text" class="js-masked-input form-control" name="zipCode" id="zipCodeLabel">
+                      </div>
+                    </div>
+                    <!-- End Form Group -->
+
+                    <!-- Form Group -->
+                    <div class="row">
+                      <label class="col-sm-3 col-form-label input-label">Có sử dụng vốn ODA?<i style="color: red;">*</i></label>
+
+                      <div class="col-sm-9">
+                        <div class="input-group input-group-sm-down-break">
+                          <!-- Custom Radio -->
+                          <div class="form-control">
+                            <div class="custom-control custom-radio">
+                              <input type="radio" class="custom-control-input" name="userAccountTypeRadio" id="userAccountTypeRadio1">
+                              <label class="custom-control-label" for="userAccountTypeRadio1" style="color: grey;">Có</label>
+                            </div>
+                          </div>
+                          <!-- End Custom Radio -->
+
+                          <label class="col-sm-1"></label>
+
+                          <!-- Custom Radio -->
+                          <div class="form-control col-sm-6">
+                            <div class="custom-control custom-radio">
+                              <input type="radio" class="custom-control-input" name="userAccountTypeRadio" id="userAccountTypeRadio2">
+                              <label class="custom-control-label" for="userAccountTypeRadio2" style="color: grey;">Không</label>
+                            </div>
+                          </div>
+                          <!-- End Custom Radio -->
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Form Group -->
+                  </div>
+                  <!-- End Body -->
+                </div>
+
+                <div id="addQuyetDinh" style="display: none;">            
+                  <!-- Card -->
+                  <div class="card">
+                    <!-- Header -->
+                    <div class="card-header">
+                      <h4 class="card-header-title">Quyết định phê duyệt</h4>
+                    </div>
+                    <!-- End Header -->
+      
+                    <!-- Body -->
+                      <div class="card-body">
+                          <div class="row form-group">
+                            <label for="SoQDLabel" class="input-group col-form-label col-sm-4">Số quyết định phê duyệt dự án<i style="color: red;">*</i></label>
+
+                           <div class="col-sm-8">
+                             <input type="text" class="form-control" name="SoQD" id="SoQDLabel">
+                           </div>
+                          </div>
+
+                          <div class="row form-group">
+                            <label for="NgayPDLabel" class="input-group col-form-label col-sm-4">Ngày phê duyệt dự án<i style="color: red;">*</i></label>
+                            <div class="col-sm-8 input-group" style="max-width: 15rem;">                     
+                              <!-- Flatpickr -->
+                              <input  type="date" class="form-control" placeholder="dd/mm/yyyy" id="NgayPDLabel" aria-describedat="iconNgayPDON"
+                                     data-hs-flatpickr-options='{
+                                       "dateFormat": "d/m/Y"
+                                     }'>                          
+                              <!-- End Flatpickr --> 
+                            </div>
+                          </div>
+
+                          <div class="row form-group">
+                            <label for="CoQuanLabel" class="input-group col-form-label col-sm-4">Cơ quan ban hành quyết định<i style="color: red;">*</i></label>
+
+                           <div class="col-sm-8">
+                             <input style="max-height: 40px;" type="text" class="form-control" name="CoQuan" id="CoQuanLabel">
+                           </div>
+                          </div>
+
+                          <div class="row form-group">
+                            <label for="TepDKLabel" class="input-group col-form-label col-sm-4" id="chooseFile">Quyết định phê duyệt</label>
+
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" name="ChooseFile1" id="TepLabel" placeholder="Chọn tệp đính kèm"
+                                  data-hs-file-attach-options='{
+                                  "textTarget": "#chooseFile"
+                                  }'>
+                            </div>
+                          </div>
+
+
+                    <!-- Form Group -->
+                    <div class="row">
+                      <label class="col-sm-4 col-form-label input-label" style="color: grey;">Dự án có hoạt động thực hiện trước?<i style="color: red;">*</i></label>
+
+                      <div class="col-sm-8">
+                        <div class="input-group input-group-sm-down-break">
+                          <!-- Custom Radio -->
+                          <div class="form-control">
+                            <div class="custom-control custom-radio">
+                              <input type="radio" class="custom-control-input" name="userAccountTypeRadio" id="userAccountTypeRadio1">
+                              <label class="custom-control-label" for="userAccountTypeRadio1" style="color: grey;">Có</label>
+                            </div>
+                          </div>
+                          <!-- End Custom Radio -->
+
+                          <label class="col-sm-1"></label>
+
+                          <!-- Custom Radio -->
+                          <div class="form-control col-sm-6">
+                            <div class="custom-control custom-radio">
+                              <input type="radio" class="custom-control-input" name="userAccountTypeRadio" id="userAccountTypeRadio2">
+                              <label class="custom-control-label" for="userAccountTypeRadio2" style="color: grey;">Không</label>
+                            </div>
+                          </div>
+                          <!-- End Custom Radio -->
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Form Group -->
+                      </div>
+                  </div>
+                  <!-- End Body -->
+      
+                  <!-- Card -->
+                  <div class="card mb-3 mb-lg-5">
+                    <!-- Header -->
+                    <div class="card-header">
+                      <h4 class="card-header-title">Danh sách KHLCNT</h4>
+                      <div class="hs-unfold">
+                        <a class="js-hs-unfold-invoker btn btn-white dropdown-toggle" href="javascript:;"
+                        data-hs-unfold-options='{
+                          "target": "#dropdownHover",
+                          "type": "css-animation",
+                          "event": "hover"
+                        }'>Chọn KHLCNT</a>
+                        <div id="dropdownHover" class="hs-unfold-content dropdown-unfold dropdown-menu">
+                          <a class="dropdown-item active" href="#">#</a>
+                          <a class="dropdown-item" href="#">#</a>
+                          <a class="dropdown-item" href="#">#</a>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Header -->
+      
+                    <!-- Body -->
+                      <!-- Table -->
+                      <div class="table-responsive datatable-custom">
+                      <table id="datatable" class="table table-borderless table-thead-bordered table-nowrap table-align-middle">
+                        <thead class="thead-light">
+                          <tr>
+                            <th scope="col">STT</th>
+                            <th scope="col">Số hiệu KHLCNT</th>
+                            <th scope="col">Tên KHLCNT</th>
+                            <th scope="col" class="text-left">Tổng giá KHLCNT(VNĐ)</th>
+                            <th scope="col">Thao tác</th>
+                          </tr>
+                        </thead>
+
+                        <tbody>
+                          <tr>
+                            <td>
+                              <p>01</p>
+                            </td>
+                            <td>
+                              <a class="media align-items-center" href="#">
+                                <div class="media-body">
+                                  <span class="d-block h5 text-hover-primary text-primary mb-0">1452881667234<i class="text-primary" data-toggle="tooltip" data-placement="top" title="Top endorsed"></i></span>
+                                </div>
+                              </a>
+                            </td>
+                            <td>Nâng cấp hạ tầng viễn thông 5G nội địa và quốc tế trên địa bàn</td>
+                            <td>
+                              <span>10,000,000,000,000</span>
+                            </td>
+                            <td class="text-center">
+                              <a style="color: black;" href="#" class="tio-delete-outlined"></a>
+                            </td>
+                          </tr>
+                  
+                          <tr>
+                            <td>
+                              <p>02</p>
+                            </td>
+                            <td>
+                              <a class="media align-items-center" href="#">
+                                <div class="media-body">
+                                  <span class="d-block h5 text-hover-primary text-primary mb-0">1452881667234</span>
+                                </div>
+                              </a>
+                            </td>
+                            <td>
+                              <span>Gói thầu 01: Cung cấp bách hóa, văn phòng phẩm</span>
+                            </td>
+                            <td>10,000,000</td>
+                            <td class="text-center">
+                              <a style="color: black;" href="#" class="tio-delete-outlined text-hover-primary"></a>
+                            </td>
+                          </tr>
+                  
+                          <tr>
+                            <td>
+                              <p>03</p>
+                            </td>
+                            <td>
+                              <a class="media align-items-center" href="#">
+                                <div class="media-body">
+                                  <span class="d-block h5 text-hover-primary text-primary mb-0">1452881667234</span>
+                                </div>
+                              </a>
+                            </td>
+                            <td>
+                              <span>Gói thầu số 39 Mua sắm bàn ghế làm việc</span>
+                            </td>
+                            <td>4,230,000,000</td>
+                            <td class="text-center">
+                              <a style="color: black;" href="#" class="tio-delete-outlined text-hover-primary"></a>
+                            </td>
+                          </tr>
+                  
+                          <tr>
+                            <td>
+                              <p>04</p>
+                            </td>
+                            <td>
+                              <a class="media align-items-center" href="#">
+                                <div class="media-body">
+                                  <span class="d-block h5 text-hover-primary text-primary mb-0">1452881667234</span>
+                                </div>
+                              </a>
+                            </td>
+                            <td>
+                              <span>Mua sắm khí oxy y tế năm 2020</span>
+                            </td>
+                            <td>46,000,000</td>
+                            <td class="text-center">
+                              <a style="color: black;" href="#" class="tio-delete-outlined text-hover-primary"></a>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      </div>
+                      <!-- End Table -->
+                    <!-- End Body -->
+                  </div>
+                  <!-- End Card -->
+                </div>
+              
+              <div id="addXacNhan" class="card card-lg" style="display: none;">
+                <!-- Card -->
+                <div class="card">
+                  <div class="card-header">
+                    <h5 class="card-title" style="margin-left: 1.5ex;">Xác nhận thông tin</h5>
+                  </div>
+                
+                  <!-- Table -->
+                  <div class="table-responsive">
+                    <table id="basicDatatable" class="table table-thead-bordered table-nowrap table-align-middle card-table">
+                      <thead class="thead-light">
+                        <tr>
+                          <th scope="col" style="color: black;width: 257px;height: 40px;">Thông tin dự án</th>
+                          <th style="width: 780px;height: 40px;"></th>
+                        </tr>
+                      </thead>
+                
+                      <tbody>
+                        <tr>
+                          <td>
+                            <span>Số dự án</span>
+                          </td>
+                          <td>
+                            <span>0459458459495</span>
+                          </td>
+                        </tr>
+                
+                        <tr>
+                          <td>
+                            <span>Phiên bản thay đổi</span>
+                          </td>
+                          <td>
+                            <span>01</span>
+                          </td>
+                        </tr>
+                
+                        <tr>
+                          <td>
+                            <span>Trạng thái</span>
+                          </td>
+                          <td>
+                            <span style="color: #E6A322;">Chưa đăng tải</span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    
+                    <table id="basicDatatable1" class="table table-thead-bordered table-nowrap table-align-middle card-table">
+                      <thead class="thead-light">
+                        <tr>
+                          <th scope="col" style="color: black;width: 257px;height: 40px;">Thông tin cơ bản</th>
+                          <th style="width: 780px;height: 40px;"></th>
+                        </tr>
+                      </thead>
+                
+                      <tbody>
+                        <tr>
+                          <td>
+                            <span>Mã QHNS</span>
+                          </td>
+                          <td>
+                            <span>43024923842384238482</span>
+                          </td>
+                        </tr>
+                
+                        <tr>
+                          <td>
+                            <span>Tên dự án</span>
+                          </td>
+                          <td>
+                            <span>0459458459495</span>
+                          </td>
+                        </tr>
+                
+                        <tr>
+                          <td>
+                            <span>Mục tiêu đầu tư</span>
+                          </td>
+                          <td>
+                            <span>01</span>
+                          </td>
+                        </tr>
+                
+                        <tr>
+                          <td>
+                            <span>Quy mô đầu tư</span>
+                          </td>
+                          <td>
+                            <span>Chưa đăng tải</span>
+                          </td>
+                        </tr>
+                
+                        <tr>
+                          <td>
+                            <span>Chủ đầu tư</span>
+                          </td>
+                          <td>
+                            <span>Phòng Nông Nghiệp Và Phát Triển Nông Thôn huyện Bắc Hà</span>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            <span>Người có thẩm quyền</span>
+                          </td>
+                          <td>
+                            <span>Nguyễn Văn A</span>
+                          </td>
+                        </tr>
+                
+                        <tr>
+                          <td>
+                            <span>Thời gian thực hiện dự án</span>
+                          </td>
+                          <td>
+                            <span>05/03/2020</span>
+                          </td>
+                        </tr>
+                
+                        <tr>
+                          <td>
+                            <span>Nhóm dự án</span>
+                          </td>
+                          <td>
+                            <span>Đầu tư & phát triển</span>
+                          </td>
+                        </tr>
+                
+                        <tr>
+                          <td>
+                            <span>Hình thức quản lý dự án</span>
+                          </td>
+                          <td>
+                            <span>Quản lý thông qua báo cáo hàng ngày</span>
+                          </td>
+                        </tr>
+                
+                        <tr>
+                          <td>
+                            <span>Hình thức đầu tư</span>
+                          </td>
+                          <td>
+                            <span>Theo 3 giai đoạn</span>
+                          </td>
+                        </tr>
+                        
+                        <tr>
+                          <td>
+                            <span>Có sử dụng vốn ODA?</span>
+                          </td>
+                          <td>
+                            <span>Không</span>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            <span>Địa điểm thực hiện</span>
+                          </td>
+                          <td>
+                            <span>Lanmark 72 - Pham Hung street - Nam Tu Liem - Ha Noi</span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    
+                    <table id="basicDatatable2" class="table table-borderless table-thead-bordered table-nowrap table-align-middle card-table">
+                      <thead class="thead-light">
+                        <tr>
+                          <th scope="col" style="color: black;width: 257px;height: 40px;">Thông tin tổng mức đầu tư</th>
+                          <th style="width: 780px;height: 40px;"></th>
+                        </tr>
+                      </thead>
+                
+                      <tbody>
+                        <tr>
+                          <td>
+                            <span>Tổng mức đầu tư</span>
+                          </td>
+                          <td>
+                            <span>12,000,000,000 VND</span>
+                          </td>
+                        </tr>
+                
+                        <tr>
+                          <td>
+                            <span></span>
+                          </td>
+                          <td>
+                            <span>525,000 USD</span>
+
+                            <span style="margin-left: 104px;">Tỷ giá: 23,000.00</span>
+                          </td>
+                        </tr>
+                
+                        <tr>
+                          <td>
+                            <span></span>
+                          </td>
+                          <td>
+                            <span>378,000 EUR</span>
+
+                            <span style="margin-left: 104px;">Tỷ giá: 26,830.00</span>
+                          </td>
+                        </tr>
+                
+                        <tr>
+                          <td>
+                            <span>Nguồn vốn đối ứng</span>
+                          </td>
+                          <td>
+                            <span>6,000,000 VND</span>
+                          </td>
+                        </tr>
+                
+                        <tr>
+                          <td>
+                            <span>Tổng mức đầu tư quy đổi về VND</span>
+                          </td>
+                          <td>
+                            <span>12,000,000 VND</span>
+
+                            <span style="margin-left: 84px;">14:56 14/11/2020</span>
+                          </td>
+                        </tr>
+                        
+                        <tr>
+                          <td>
+                            <span>Số tiền bằng chữ</span>
+                          </td>
+                          <td>
+                            <span>Mười hai tỉ đồng</span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    
+                    <table id="basicDatatable3" class="table table-borderless table-thead-bordered table-nowrap table-align-middle card-table">
+                      <thead class="thead-light">
+                        <tr>
+                          <th scope="col" style="width: 257px;height: 40px;color: black;">Thông tin tổng mức đầu tư</th>
+                          <th style="width: 780px;height: 40px;"></th>
+                        </tr>
+                      </thead>
+                
+                      <tbody>
+                        <tr>
+                          <td>
+                            <span>Số quyết định phê duyệt dự án</span>
+                          </td>
+                          <td>
+                            <span>02/10QDĐTCPVN-01LTKT</span>
+                          </td>
+                        </tr>
+                
+                        <tr>
+                          <td>
+                            <span>Ngày phê duyệt dự án</span>
+                          </td>
+                          <td>
+                            <span>30/11/2020</span>
+                          </td>
+                        </tr>
+                
+                        <tr>
+                          <td>
+                            <span>Cơ quan ban hành quyết định</span>
+                          </td>
+                          <td>
+                            <span>Bộ Kế hoạch và Đầu tư</span>
+                          </td>
+                        </tr>
+                
+                        <tr>
+                          <td>
+                            <span>Quyết định phê duyệt</span>
+                          </td>
+                          <td>
+                            <h3><span class="badge badge-soft-secondary badge-pill">QuyetdinhDautu2020.....pdf</span></h3>
+                          </td>
+                        </tr>
+                
+                        <tr>
+                          <td>
+                            <span>Dự án có hoạt động thực hiên trước</span>
+                          </td>
+                          <td>
+                            <span>Có</span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <table id="basicDatatable4" class="table table-borderless table-thead-bordered table-nowrap table-align-middle card-table">
+                      <thead class="thead-light">
+                        <tr>
+                          <th style="width: 1038px;height: 40px;color: black;" >Danh sách KHLCNT liên kết với dự án</th>
+                        </tr>
+                      </thead>
+                      <!-- Card -->
+                      <div class="card">                    
+                        <!-- Table -->
+                        <div class="table-responsive">
+                          <table class="table table-lg table-thead-bordered table-nowrap table-align-middle">
+                            <thead class="thead-light">
+                              <tr>
+                                <th class="align-content-center text-center" style="max-width: 55.27px;height: 40px;">STT</th>
+                                <th style="width: 253.14px;height: 40px;">Số hiệu KHLCNT</th>
+                                <th style="max-width: 474.23px;height: 40px;">Tên KHLCNT</th>
+                                <th style="width: 255.36px;height: 40px;" class="text-right">Tổng giá KHLCNT</th>
+                              </tr>
+                            </thead>
+                      
+                            <tbody>
+                              <tr>
+                                <td class="text-center">
+                                  <span>01</span>
+                                </td>
+                                <td>
+                                  <a class="media align-items-center" href="#">
+                                    <div class="media-body">
+                                      <span class="text-primary mb-0">1452881667234<i class="text-primary" data-toggle="tooltip" data-placement="top" title="Top endorsed"></i></span>
+                                    </div>
+                                  </a>
+                                </td>
+                                <td>Nâng cấp hạ tầng viễn thông 5G nội địa và quốc tế trên địa bàn</td>
+                                <td class="text-right">
+                                  <span>10,000,000,000,000</span>
+                                </td>
+                              </tr>
+                      
+                              <tr>
+                                <td class="text-center">
+                                  <span>02</span>
+                                </td>
+                                <td>
+                                  <a class="media align-items-center" href="#">
+                                    <div class="media-body">
+                                      <span class=" text-primary mb-0">1452881667234</span>
+                                    </div>
+                                  </a>
+                                </td>
+                                <td>
+                                  <span>Gói thầu 01: Cung cấp bách hóa, văn phòng phẩm</span>
+                                </td>
+                                <td class="text-right">10,000,000</td>
+                              </tr>
+                      
+                              <tr>
+                                <td class="text-center">
+                                  <span>03</span>
+                                </td>
+                                <td>
+                                  <a class="media align-items-center" href="#">
+                                    <div class="media-body">
+                                      <span class=" text-primary mb-0">1452881667234</span>
+                                    </div>
+                                  </a>
+                                </td>
+                                <td>
+                                  <span>Gói thầu số 39 Mua sắm bàn ghế làm việc</span>
+                                </td>
+                                <td class="text-right">4,230,000,000</td>
+                              </tr>
+                      
+                              <tr>
+                                <td class="text-center">
+                                  <span>04</span>
+                                </td>
+                                <td>
+                                  <a class="media align-items-center" href="#">
+                                    <div class="media-body">
+                                      <span class=" text-primary mb-0">1452881667234</span>
+                                    </div>
+                                  </a>
+                                </td>
+                                <td>
+                                  <span>Mua sắm khí oxy y tế năm 2020 </span>
+                                </td>
+                                <td class="text-right">46,000,000</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <!-- End Table -->
+                      </div>
+                      <!-- End Card -->
+                    </table>
+                  </div>
+                  <!-- End Table -->
+                </div>
+                <!-- End Card -->
+              </div>
+              <!-- End Content Step Form -->
+            </div>
+          </div>
+          <!-- End Row -->
+        </form>
+        <!-- End Step Form -->
+      </div>
+      <!-- End Content -->
+      
+      <div class="nav-divider"></div>
+
+      <!-- Footer -->
+        <div class=" page-footer">
+          <div class="row justify-content-between align-items-center">
+            <div class="col" style="margin-left: 10rem;">
+              <button id="btnReturn" type="button" class="btn btn-pill"><i class="tio-back-ui"></i> Quay lại</button>
+            </div>
+            <div class="col-auto" style="margin-right: 11rem;">
+              <button style="margin-right: 5px;" style="background-color: #F5F5F5;" type="submit" id="btnLuu" class="btn btn-white" >Lưu<i style="margin-left: 3px;" class="tio-save-outlined"></i></button>
+              <button style="background-color: #064D69; border-color: #064D69;" type="button" id="btnNext" class="btn btn-primary"
+              data-hs-step-form-prev-options='{
+                "targetSelector": "#addTongMuc"
+              }'>
+                Tiếp tục<i class="tio-next-ui" style="margin-left: 1ex;"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      
+
+      
+      <!-- End Footer -->
+    </main>
+    <!-- ========== END MAIN CONTENT ========== -->
+
+    <!-- JS Global Compulsory  -->
+    <script src="./../../../assets/vendor/jquery/dist/jquery.min.js"></script>
+    <script src="./../../../assets/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
+    <script src="./../../../assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JS Implementing Plugins -->
+    <script src="./../../../assets/vendor/hs-navbar-vertical-aside/hs-navbar-vertical-aside.min.js"></script>
+    <script src="./../../../assets/vendor/hs-unfold/dist/hs-unfold.min.js"></script>
+    <script src="./../../../assets/vendor/hs-form-search/dist/hs-form-search.min.js"></script>
+    <script src="./../../../assets/vendor/select2/dist/js/select2.full.min.js"></script>
+    <script src="./../../../assets/vendor/chart.js/dist/Chart.min.js"></script>
+    <script src="./../../../assets/vendor/chart.js.extensions/chartjs-extensions.js"></script>
+    <script src="./../../../assets/vendor/chartjs-plugin-datalabels/dist/chartjs-plugin-datalabels.min.js"></script>
+    <script src="./../../../assets/vendor/daterangepicker/moment.min.js"></script>
+    <script src="./../../../assets/vendor/daterangepicker/daterangepicker.js"></script>
+    <script src="./../../../assets/vendor/datatables/media/js/jquery.dataTables.min.js"></script>
+    <script src="./../../../assets/vendor/datatables.net.extensions/select/select.min.js"></script>
+    <script src="./../../../assets/vendor/clipboard/dist/clipboard.min.js"></script>
+    <script src="./../../../assets/vendor/hs-step-form/dist/hs-step-form.min.js"></script>
+    <script src="./../../../assets/vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="../../../../assets/vendor/flatpickr/dist/flatpickr.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="../../../../assets/vendor/sortablejs/Sortable.min.js"></script>
+    <script src="../../../../assets/vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="../../../../assets/vendor/hs-file-attach/dist/hs-file-attach.min.js"></script>
+
+    
+
+    <!-- JS Fis -->
+    <script src="./../../../assets/js/theme.min.js"></script>
+
+    <!-- JS Plugins Init. -->
+    <script>
+      $(document).on('ready', function () {
+        $('.js-navbar-vertical-aside-toggle-invoker').click(function () {
+          $('.js-navbar-vertical-aside-toggle-invoker i').tooltip('hide');
+        });
+
+        
+
+        // initialization of navbar vertical navigation
+        var sidebar = $('.js-navbar-vertical-aside').hsSideNav();
+
+        // initialization of tooltip in navbar vertical menu
+        $('.js-nav-tooltip-link').tooltip({ boundary: 'window' })
+
+        $(".js-nav-tooltip-link").on("show.bs.tooltip", function(e) {
+          if (!$("body").hasClass("navbar-vertical-aside-mini-mode")) {
+            return false;
+          }
+        });
+
+        // initialization of unfold
+        $('.js-hs-unfold-invoker').each(function () {
+          var unfold = new HSUnfold($(this)).init();
+        });
+
+        // initialization of form search
+        $('.js-form-search').each(function () {
+          new HSFormSearch($(this)).init()
+        });
+
+        // initialization of select2
+        $('.js-select2-custom').each(function () {
+          var select2 = $.HSCore.components.HSSelect2.init($(this));
+        });
+
+        // initialization of chartjs
+        Chart.plugins.unregister(ChartDataLabels);
+
+        $('.js-chart').each(function () {
+          $.HSCore.components.HSChartJS.init($(this));
+        });
+
+        var updatingChart = $.HSCore.components.HSChartJS.init($('#updatingData'));
+
+        // Call when tab is clicked
+        $('[data-toggle="chart-bar"]').click(function(e) {
+          let keyDataset = $(e.currentTarget).attr('data-datasets')
+
+         if (keyDataset === 'lastWeek') {
+           updatingChart.data.labels = ["Apr 22", "Apr 23", "Apr 24", "Apr 25", "Apr 26", "Apr 27", "Apr 28", "Apr 29", "Apr 30", "Apr 31"];
+           updatingChart.data.datasets = [
+             {
+               "data": [120, 250, 300, 200, 300, 290, 350, 100, 125, 320],
+               "backgroundColor": "#1890FF",
+               "hoverBackgroundColor": "#1890FF",
+               "borderColor": "#1890FF"
+             },
+             {
+               "data": [250, 130, 322, 144, 129, 300, 260, 120, 260, 245, 110],
+               "backgroundColor": "#e7eaf3",
+               "borderColor": "#e7eaf3"
+             }
+           ];
+           updatingChart.update();
+         } else {
+           updatingChart.data.labels = ["May 1", "May 2", "May 3", "May 4", "May 5", "May 6", "May 7", "May 8", "May 9", "May 10"];
+           updatingChart.data.datasets = [
+             {
+               "data": [200, 300, 290, 350, 150, 350, 300, 100, 125, 220],
+               "backgroundColor": "#1890FF",
+               "hoverBackgroundColor": "#1890FF",
+               "borderColor": "#1890FF"
+             },
+             {
+               "data": [150, 230, 382, 204, 169, 290, 300, 100, 300, 225, 120],
+               "backgroundColor": "#e7eaf3",
+               "borderColor": "#e7eaf3"
+             }
+           ]
+           updatingChart.update();
+         }
+        })
+
+        // initialization of bubble chartjs with Datalabels plugin
+        $('.js-chart-datalabels').each(function () {
+          $.HSCore.components.HSChartJS.init($(this), {
+            plugins: [ChartDataLabels],
+            options: {
+              plugins: {
+                datalabels: {
+                  anchor: function(context) {
+                    var value = context.dataset.data[context.dataIndex];
+                    return value.r < 20 ? 'end' : 'center';
+                  },
+                  align: function(context) {
+                    var value = context.dataset.data[context.dataIndex];
+                    return value.r < 20 ? 'end' : 'center';
+                  },
+                  color: function(context) {
+                    var value = context.dataset.data[context.dataIndex];
+                    return value.r < 20 ? context.dataset.backgroundColor : context.dataset.color;
+                  },
+                  font: function(context) {
+                    var value = context.dataset.data[context.dataIndex],
+                      fontSize = 25;
+
+                    if (value.r > 50) {
+                      fontSize = 35;
+                    }
+
+                    if (value.r > 70) {
+                      fontSize = 55;
+                    }
+
+                    return {
+                      weight: 'lighter',
+                      size: fontSize
+                    };
+                  },
+                  offset: 2,
+                  padding: 0
+                }
+              }
+            },
+          });
+        });
+
+        // initialization of daterangepicker
+        $('.js-daterangepicker').daterangepicker();
+
+        $('.js-daterangepicker-times').daterangepicker({
+          timePicker: true,
+          startDate: moment().startOf('hour'),
+          endDate: moment().startOf('hour').add(32, 'hour'),
+          locale: {
+            format: 'M/DD hh:mm A'
+          }
+        });
+
+        var start = moment();
+        var end = moment();
+
+        function cb(start, end) {
+          $('#js-daterangepicker-predefined .js-daterangepicker-predefined-preview').html(start.format('MMM D') + ' - ' + end.format('MMM D, YYYY'));
+        }
+
+        $('#js-daterangepicker-predefined').daterangepicker({
+          startDate: start,
+          endDate: end,
+          ranges: {
+            'Today': [moment(), moment()],
+            'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+            'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+            'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+            'This Month': [moment().startOf('month'), moment().endOf('month')],
+            'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+          }
+        }, cb);
+
+        cb(start, end);
+
+        // initialization of datatables
+        var datatable = $.HSCore.components.HSDatatables.init($('#datatable'), {
+          select: {
+            style: 'multi',
+            selector: 'td:first-child input[type="checkbox"]',
+            classMap: {
+              checkAll: '#datatableCheckAll',
+              counter: '#datatableCounter',
+              counterInfo: '#datatableCounterInfo'
+            }
+          },
+          language: {
+            zeroRecords: '<div class="text-center p-4">' +
+                '<img class="mb-3" src="./../../../assets/svg/illustrations/sorry.svg" alt="Image Description" style="width: 7rem;">' +
+                '<p class="mb-0">No data to show</p>' +
+                '</div>'
+          }
+        });
+
+        $('.js-datatable-filter').on('change', function() {
+          var $this = $(this),
+            elVal = $this.val(),
+            targetColumnIndex = $this.data('target-column-index');
+
+          datatable.column(targetColumnIndex).search(elVal).draw();
+        });
+
+        $('#datatableSearch').on('mouseup', function (e) {
+          var $input = $(this),
+            oldValue = $input.val();
+
+          if (oldValue == "") return;
+
+          setTimeout(function(){
+            var newValue = $input.val();
+
+            if (newValue == ""){
+              // Gotcha
+              datatable.search('').draw();
+            }
+          }, 1);
+        });
+
+        // initialization of clipboard
+        $('.js-clipboard').each(function() {
+          var clipboard = $.HSCore.components.HSClipboard.init(this);
+        });
+        // initialization of step form
+        $('.js-step-form').each(function () {
+          var stepForm = new HSStepForm($(this), {
+            finish: function() {
+              $("#addUserStepFormProgress").hide();
+              $("#addUserStepFormContent").hide();
+              $("#successMessageContent").show();
+            }
+          }).init();
+        });
+      });
+    
+
+    </script>
+    <script>
+      $(document).on('ready', function () {
+        // initialization of flatpickr
+        $('.js-flatpickr').each(function () {
+          $.HSCore.components.HSFlatpickr.init($(this));
+        });
+      });
+    </script>
+    <script>
+      $(document).on('ready', function () {
+        // initialization of sortable
+        $('.js-sortable').each(function () {
+          var sortable = $.HSCore.components.HSSortable.init($(this));
+        });
+      });
+    </script>
+    <script>
+      $(document).on('ready', function () {
+        // initialization of form validation
+        $('.js-validate').each(function() {
+          $.HSCore.components.HSValidation.init($(this));
+        });
+      });
+    </script>
+    <script>
+      $(document).on('ready', function () {
+        // initialization of custom file
+        $('.js-file-attach').each(function () {
+          var customFile = new HSFileAttach($(this)).init();
+        });
+      });
+    </script>
+    <script>
+      $(document).on('ready', function () {
+        $.HSCore.components.HSFlatpickr.init($('#js-flatpickr-disabling-dates'), {
+          disable: [
+            function (date) {
+              // return true to disable
+              return (date.getDay() === 0 || date.getDay() === 6);
+            }
+          ],
+        });
+      });
+    </script>
+    <script>
+      $(document).on('ready', function () {
+        // initialization of scroll nav
+        $('.js-scroll-nav').each(function () {
+          var scrollNav = new HSScrollNav($(this)).init();
+        });
+      });
+    </script>
+    <script>
+      $(document).on('ready',function(){
+        $("#btnNext").click(function(){
+          $('.js-step-form').each(function () {
+          var stepForm = new HSStepForm($(this), {
+            finish: function() {
+              if("#btnNext".click("#addThongTin")){
+                $("#addQuyetDinh").hide();
+                $("#addTongMuc").hide();
+                $("#addXacNhan").hide();
+              }
+            }
+          }).init();
+         });
+        })
+      })
+    </script>
+
+    <!-- IE Support -->
+    <script>
+      if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) document.write('<script src="./../../../assets/vendor/babel-polyfill/polyfill.min.js"><\/script>');
+    </script>
+  </body>
+</html>
